@@ -24,7 +24,6 @@ def obj_detection(my_img):
     # column1.pyplot(use_column_width=True)
     column1.image(my_img, use_column_width=True)
 
-
     # YOLO model
     net = cv2.dnn.readNet("yolov3_training_final.weights","yolov3_testing.cfg")
 
