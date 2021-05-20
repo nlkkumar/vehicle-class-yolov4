@@ -104,7 +104,6 @@ def obj_detection(my_img):
     else:
         st.success("Found {} Object - {}".format(len(indexes), [item for item in set(items)]))
 
-
 def main():
     st.write(
         "You can view Vehicle Classification using YOLO model here. Select one of the following options to proceed:")
