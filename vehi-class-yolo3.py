@@ -19,9 +19,11 @@ def obj_detection(my_img):
 
     column1.subheader("Input image")
     st.text("")
-    plt.figure(figsize=(16, 16))
-    plt.imshow(my_img)
-    column1.pyplot(use_column_width=True)
+    # plt.figure(figsize=(16, 16))
+    # plt.imshow(my_img)
+    # column1.pyplot(use_column_width=True)
+    column1.image(my_img, use_column_width=True)
+
 
     # YOLO model
     net = cv2.dnn.readNet("yolov3_training_final.weights","yolov3_testing.cfg")
@@ -93,9 +95,10 @@ def obj_detection(my_img):
     st.text("")
     column2.subheader("Output image")
     st.text("")
-    plt.figure(figsize=(15, 15))
-    plt.imshow(img)
-    column2.pyplot(use_column_width=True)
+    # plt.figure(figsize=(15, 15))
+    # plt.imshow(img)
+    # column2.pyplot(use_column_width=True)
+    column2.image(img, use_column_width=True)
 
     if len(indexes) > 1:
         st.success("Found {} Objects - {}".format(len(indexes), [item for item in set(items)]))
