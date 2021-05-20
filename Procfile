@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run vehi-class-yolov3.py
+web: sh setup.sh && streamlit run vehi-class-yolo3.py
