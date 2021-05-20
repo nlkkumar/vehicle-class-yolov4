@@ -1,0 +1,8 @@
+Truck
+miniTruck
+Person
+Lorry
+Car
+Bus
+Van
+Jeep
