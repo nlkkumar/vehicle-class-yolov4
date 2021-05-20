@@ -1,6 +1,5 @@
 numpy
 pandas
 streamlit
-PIL
 matplotlib
 cv2
