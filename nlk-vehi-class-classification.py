@@ -176,13 +176,13 @@ def obj_detection(my_img):
 
 st.title('Welcome to Vehicle Classification App')
 
-st.markdown("Welcome to this  Computer Vision application that classifies Vehicles on Indian Highways. The Vehicles are classified into Seven different classes namely: Bus, Truck, Car, Jeep,Van,miniTruck and Lorry.")
+st.markdown("Welcome to this  Computer Vision application that classifies Vehicles on Indian Highways. The Vehicles are classified into Seven different classes namely: Bus, Truck, Car, Jeep,Van,miniTruck and Lorry.It will find Person too if present.")
 
 def main():
     st.write(
         "You can view Vehicle Classification using YOLO model here. Select one of the following options to proceed:")
 
-    choice = st.radio("", ("See the Demo", "Choose an image of your choice"))
+    choice = st.radio("", ("Default", "Choose an image of your choice"))
     # st.write()
 
     if choice == "Choose an image of your choice":
@@ -193,7 +193,7 @@ def main():
             my_img = Image.open(image_file)
             obj_detection(my_img)
 
-    elif choice == "See the Demo":
+    elif choice == "Default":
         my_img = Image.open("v999.jpg")
         obj_detection(my_img)
 
