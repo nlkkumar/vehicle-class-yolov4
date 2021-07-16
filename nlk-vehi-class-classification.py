@@ -13,7 +13,7 @@ from streamlit_lottie import st_lottie
 confThreshold = 0.2  #Confidence threshold
 nmsThreshold = 0.4   #Non-maximum suppression threshold
 inpWidth = 416       #Width of network's input image
-inpHeight = 416      #Height of network's input image
+inpHeight = 416      #Height of network's input image 
 
 
 def obj_detection(my_img):
