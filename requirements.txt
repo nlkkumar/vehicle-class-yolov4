@@ -6,3 +6,4 @@ opencv-python>=3.4.0.12
 opencv-python-headless
 Pillow>=5.3.0
 streamlit-lottie==0.0.2
+
